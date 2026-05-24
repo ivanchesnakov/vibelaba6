@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
       p.animate([
         { transform: 'translate(-50%, -50%) scale(1)', opacity: 1 },
         { transform: `translate(calc(-50% + ${Math.cos(angle)*dist}px), calc(-50% + ${Math.sin(angle)*dist}px)) scale(0)`, opacity: 0 }
-      ], { duration: 1500, easing: 'cubic-bezier(0, .9, .57, 1)', fill: 'forwards' })
+      ], { duration: 2500, easing: 'cubic-bezier(0, .9, .57, 1)', fill: 'forwards' })
       .onfinish = () => p.remove();
     }
 
